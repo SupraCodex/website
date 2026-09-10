@@ -1,0 +1,39 @@
+{
+  "name": "supracodex-site-vitrine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/api/*.test.ts",
+    "quality:check": "node scripts/quality-check.mjs",
+    "security:scan": "node scripts/quality-check.mjs",
+    "migrations:check": "node scripts/migrations-check.mjs",
+    "rls:test": "node scripts/test-rls.mjs",
+    "verify": "npm run lint && npm run typecheck && npm test && npm run security:scan && npm run migrations:check"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.57.4",
+    "next": "^16.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^18.3.24",
+    "@types/react-dom": "^18.3.7",
+    "@typescript-eslint/eslint-plugin": "^8.70.0",
+    "@typescript-eslint/parser": "^8.70.0",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^16.3.4",
+    "globals": "^16.4.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.43.0"
+  }
+}
