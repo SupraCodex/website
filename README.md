@@ -153,8 +153,8 @@ Le projet est organisé autour de **22 migrations** versionnées (RLS, fonctions
 ## Installation
 
 ```bash
-git clone https://github.com/spectrezones-spectre/supracodex-hack-site-vitrine-backend.git
-cd supracodex-hack-site-vitrine-backend
+git clone https://github.com/SupraCodex/website.git
+cd website
 npm ci
 cp .env.example .env
 ```
@@ -559,7 +559,7 @@ Les ressources `private` et `archive` ne sont jamais servies directement. Une UR
 
 ## Support et maintenance
 
-- **Dépôt** : [spectrezones-spectre/supracodex-hack-site-vitrine-backend](https://github.com/spectrezones-spectre/supracodex-hack-site-vitrine-backend)
+- **Dépôt** : [github.com/SupraCodex/website](github.com/SupraCodex/website)
 - **Branche principale** : `master`
 - **Issues** : via GitHub Issues (PR template fourni)
 - **Contributions** : fork → branche → PR → revue (voir `.github/pull_request_template.md`)
